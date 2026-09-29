@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f3">
+  <meta name="description" content="Подборка квартир для долгосрочной аренды. Проверенные объявления, честные цены и удобный поиск.">
+  <title>Ключ — квартиры, в которых хорошо</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">
+    <div class="shell topline-inner">
+      <div class="topline-note"><span class="topline-dot"></span>Новые квартиры каждый день — уже проверены</div>
+      <div class="topline-right"><span>Помогаем найти свой адрес с 2018 года</span><span>·</span><span>+7 (495) 120-18-18</span></div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Ключ — на главную">
+        <span class="brand-mark" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16 4h3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span class="brand-name">ключ<span>.</span></span>
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#catalog">Снять квартиру</a><a href="#advantages">Как мы работаем</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="saved-link" id="saved-filter" type="button" aria-label="Показать избранное"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 8.7c0 4.1-8.8 10-8.8 10s-8.8-5.9-8.8-10A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Избранное <span class="saved-count" id="saved-count">0</span></button>
+        <a class="host-link" href="mailto:hello@kluch.example">Сдать квартиру <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Открыть меню" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-inner">
+        <div class="eyebrow"><span class="eyebrow-line"></span>Долгосрочная аренда без сюрпризов</div>
+        <h1 id="hero-title">Место, куда<br>хочется <em>возвращаться.</em></h1>
+        <p class="hero-description">Выбирайте квартиру по своему ритму жизни. Мы уже проверили документы и позаботились о честных условиях.</p>
+        <form class="search-panel" id="search-form">
+          <div class="search-field"><label for="city-search">Город или район</label><input id="city-search" type="search" placeholder="Например, Хамовники" autocomplete="off"></div>
+          <div class="search-field"><label for="move-date">Дата заезда</label><input id="move-date" type="date" aria-label="Дата заезда"></div>
+          <div class="search-field"><label for="rooms-select">Комнат</label><select id="rooms-select"><option value="any">Любое количество</option><option value="1">1 комната</option><option value="2">2 комнаты</option><option value="3">3 комнаты</option></select></div>
+          <div class="search-field"><label for="budget-select">Бюджет в месяц</label><select id="budget-select"><option value="any">Не важен</option><option value="80000">До 80 000 ₽</option><option value="120000">До 120 000 ₽</option><option value="160000">До 160 000 ₽</option></select></div>
+          <button class="search-submit" type="submit"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Найти квартиру</button>
+        </form>
+        <div class="hero-foot"><span class="hero-foot-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m12 3 7 3v5c0 4.4-3 8-7 10-4-2-7-5.6-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Все квартиры проверены</span><span class="hero-foot-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg>Без комиссии агентству</span><span class="hero-foot-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Ответим за 15 минут</span></div>
+      </div>
+    </section>
+
+    <section class="main" id="catalog" aria-labelledby="catalog-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><div class="section-kicker">Подборка недели · Москва</div><h2 id="catalog-title">Квартиры для жизни</h2><div class="result-count" id="result-count" aria-live="polite"></div></div>
+          <div class="heading-tools">
+            <button class="map-toggle" id="map-toggle" type="button" aria-pressed="false"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 3v15m6-12v15" stroke="currentColor" stroke-width="1.6"/></svg>На карте</button>
+            <div class="sort-wrap"><select class="sort-select" id="sort-select" aria-label="Сортировка квартир"><option value="recommended">Сначала подходящие</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="rating">По рейтингу</option></select></div>
+          </div>
+        </div>
+        <div class="filter-row" role="group" aria-label="Быстрые фильтры">
+          <span class="filter-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Популярное</span>
+          <button class="filter-chip active" data-filter="all" type="button">Все квартиры</button><button class="filter-chip" data-filter="balcony" type="button">С балконом</button><button class="filter-chip" data-filter="pets" type="button">Можно с питомцем</button><button class="filter-chip" data-filter="new" type="button">Новостройки</button><button class="filter-chip" data-filter="furnished" type="button">С мебелью</button><button class="filter-chip" data-filter="saved" type="button">Избранное</button><button class="filter-clear" id="clear-filters" type="button" hidden>Сбросить фильтры</button>
+        </div>
+        <div class="listing-layout" id="listing-layout">
+          <div class="listing-grid" id="listing-grid" aria-live="polite"></div>
+          <aside class="map-panel" aria-label="Схематичная карта расположения квартир"><div class="map-art"><div class="map-water"></div><span class="map-label one">ПАТРИАРШИЕ ПРУДЫ</span><span class="map-label two">ЯКИМАНКА</span><span class="map-label three">ХАМОВНИКИ</span><button class="map-marker m1" type="button" data-map-index="0">78 000 ₽</button><button class="map-marker m2" type="button" data-map-index="1">112 000 ₽</button><button class="map-marker m3" type="button" data-map-index="2">95 000 ₽</button><button class="map-marker m4" type="button" data-map-index="3">145 000 ₽</button><button class="map-marker m5" type="button" data-map-index="4">89 000 ₽</button></div><div class="map-caption">Москва · 8 предложений</div></aside>
+        </div>
+        <div class="load-more-wrap"><button class="load-more" id="load-more" type="button">Показать ещё квартиры <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14m-7-7 7 7 7-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      </div>
+    </section>
+
+    <section class="trust-band" id="advantages" aria-label="Наши преимущества"><div class="shell trust-inner">
+      <div class="trust-title">Поиск дома может быть спокойным.</div>
+      <div class="trust-item"><span class="trust-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="m12 3 7 3v5c0 4.4-3 8-7 10-4-2-7-5.6-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Проверяем документы</strong><span>Собственник и квартира</span></span></div>
+      <div class="trust-item"><span class="trust-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="m17 16 2 2 3-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Честные условия</strong><span>Цена без мелкого шрифта</span></span></div>
+      <div class="trust-item"><span class="trust-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5m4-1v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Всегда на связи</strong><span>От первого звонка до ключей</span></span></div>
+    </div></section>
+  </main>
+  <footer class="footer" id="contacts"><div class="shell">
+    <div class="footer-top"><div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span class="brand-name">ключ<span>.</span></span></a><p class="footer-description">Помогаем находить квартиры, которые становятся домом. Спокойно, прозрачно и с заботой о деталях.</p></div>
+      <div class="footer-links"><div class="footer-column"><strong>Арендаторам</strong><a href="#catalog">Найти квартиру</a><a href="#advantages">Как это работает</a><a href="mailto:hello@kluch.example">Задать вопрос</a></div><div class="footer-column"><strong>Собственникам</strong><a href="mailto:hello@kluch.example">Сдать квартиру</a><a href="mailto:hello@kluch.example">Условия размещения</a><a href="tel:+74951201818">+7 (495) 120-18-18</a></div><div class="footer-column"><strong>Мы рядом</strong><a href="mailto:hello@kluch.example">hello@kluch.example</a><a href="#contacts">Москва, ул. Лесная, 7</a></div></div>
+    </div><div class="footer-bottom"><span>© 2026 «Ключ». Квартиры для жизни.</span><span>Политика конфиденциальности</span><div class="socials"><a href="#contacts" aria-label="ВКонтакте">вк</a><a href="#contacts" aria-label="Телеграм">тг</a></div></div>
+  </div></footer>
+  <div id="modal-root"></div><div id="toast-root" aria-live="polite"></div>
+</body>
+</html>
